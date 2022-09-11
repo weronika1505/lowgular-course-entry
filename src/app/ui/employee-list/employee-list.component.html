@@ -1,4 +1,4 @@
-<h1><span style="color: yellowgreen"><i>Employee list</i></span></h1>
+<h1><span style="color: yellowgreen">Employee list</span></h1>
 <span style="color:blueviolet"> <b> The best <i>employees</i>:</b></span>
 <ul *ngIf="data$ | async as data; else empty">
   <li *ngFor="let employee of data">{{ employee.id }}: {{ employee.name }}: {{ employee.email}}</li>
