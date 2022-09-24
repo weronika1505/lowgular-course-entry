@@ -6,17 +6,12 @@ import {ProjectModel} from "../../model/project.model";
 import {ProjectService} from "../../services/project.service";
 
 @Component({
-  selector: 'employee-list',
-  templateUrl: './employee-list.component.html',
-  encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  selector: 'app-employees-faces',
+  templateUrl: './employees-faces.component.html',
+  encapsulation: ViewEncapsulation.Emulated,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class EmployeeListComponent {
+export class EmployeesFacesComponent {
   data$: Observable<ProjectModel[] | null> = this._projectService.getAll();
-  constructor(private _projectService: ProjectService) {
-  }
+  constructor(private _projectService: ProjectService) {}
 }
-
-
-
-
