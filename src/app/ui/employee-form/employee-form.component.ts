@@ -9,11 +9,12 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 })
 export class EmployeeFormComponent {
   readonly employeeForm: FormGroup = new FormGroup({
-  name: new FormControl(null, [Validators.required]),
+  email: new FormControl(null, [Validators.required]),
   age: new FormControl(null,[Validators.min(18), Validators.required]),
   salary: new FormControl(null, [Validators.required])
 });
-  onButtonClick() {
-    alert('User was successfully added to the database');
+  onButtonClick(form: {email: string, age: number, salary: number}) {
+    alert('User was successfully added to the database. ' + form.email + form.age + form.salary )
+    ;
   }
 }
