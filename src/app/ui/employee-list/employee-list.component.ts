@@ -12,8 +12,11 @@ import {ProjectService} from "../../services/project.service";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EmployeeListComponent {
-  data$: Observable<ProjectModel[] | null> = this._projectService.getAll();
-  constructor(private _projectService: ProjectService) {
+  data$ = this._employeeService.getAll();
+  constructor(private _employeeService: EmployeeService) {
+  }
+  remove(id: string) {
+    this._employeeService.delete(id).subscribe();
   }
 }
 
