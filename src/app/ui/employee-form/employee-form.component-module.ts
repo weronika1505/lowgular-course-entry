@@ -8,5 +8,4 @@ import { EmployeeFormComponent } from './employee-form.component';
   providers: [],
   exports: [EmployeeFormComponent]
 })
-export class EmployeeFormComponentModule {
-}
+

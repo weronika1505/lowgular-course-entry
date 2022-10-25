@@ -10,5 +10,4 @@ import {CommonModule} from "@angular/common";
   providers: [],
   exports: [EmployeesFacesComponent]
 })
-export class EmployeesFacesComponentModule {
-}
+

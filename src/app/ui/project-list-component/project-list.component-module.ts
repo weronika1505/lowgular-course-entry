@@ -10,5 +10,4 @@ import {CommonModule} from "@angular/common";
   providers: [],
   exports: [ProjectListComponent]
 })
-export class ProjectListComponentModule {
-}
+

@@ -8,4 +8,3 @@ import { EmployeeListComponent } from './employee-list.component';
   providers: [],
   exports: [EmployeeListComponent],
 })
-export class EmployeeListComponentModule {}

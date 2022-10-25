@@ -7,5 +7,4 @@ import { EmployeeService } from './employee.service';
   providers: [EmployeeService],
   exports: []
 })
-export class EmployeeServiceModule {
-}
+

@@ -4,6 +4,7 @@ import { EmployeeService } from '../../services/employee.service';
 import {PeopleModel} from "../../model/people.model";
 import {ProjectModel} from "../../model/project.model";
 import {ProjectService} from "../../services/project.service";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'employee-list',
@@ -12,13 +13,9 @@ import {ProjectService} from "../../services/project.service";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EmployeeListComponent {
-  data$ = this._employeeService.getAll();
-  constructor(private _employeeService: EmployeeService) {
-  }
-  remove(id: string) {
-    this._employeeService.delete(id).subscribe();
-  }
-}
+  constructor(private _httpClient: HttpClient) {
+  data$: Observable<EmployeeService[] | null> this._httpClient.get<EmployeeService[]>(url 'https://dummy.restapiexample.com/api/v1/employees');
+}}
 
 
 
