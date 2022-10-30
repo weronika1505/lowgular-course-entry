@@ -7,4 +7,3 @@ import { ProjectService } from './project.service';
   providers: [ProjectService],
   exports: []
 })
-

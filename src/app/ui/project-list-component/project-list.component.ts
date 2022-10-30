@@ -1,7 +1,5 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 import {Observable} from "rxjs";
-import {ProjectModel} from "../../model/project.model";
-import {ProjectService} from "../../services/project.service";
 
 @Component({
   selector: 'app-project-list',
