@@ -1,2 +1,20 @@
+<div style="border: solid royalblue; background-color: powderblue; width: 600px">
+  <p></p>
+<form [formGroup]="employeeForm">
+  <input type="text" formControlName="name" placeholder="Name" >
+  <input type="text" formControlName="age" placeholder="Age">
+  <input type="text" formControlName="salary" placeholder="Salary">
+  <input type="submit" [disabled]="employeeForm.invalid" value="Submit">
+</form>
+<p></p>
 
-
+<p style="text-align: center">
+  <b>New employee: </b> {{employeeForm.value.name}}
+</p>
+<p>
+  age: {{employeeForm.value.age}}
+</p>
+<p>
+  salary: {{ employeeForm.value.salary}}
+</p>
+</div>
